@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #C13131 #00000011;
+}
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: 00000011;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #C13131;
+    border-radius: 20px;
+    border: 3px solid 00000011;
+}
+:root{
+    --color__principal: #C13131;
+    --color__p: #8D9298;
+    --color__title: #1A202C;
+    --color__textNav: #4E4D4F;
+}
+body{
+    background: #F4F1F8;
+    overflow-x: hidden;
+}
+.nav{
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F4F1F8;
+    height: 70px;
+    width: 100%;
+}
+.nav__section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 100%;
+}
+.nav__content1,.nav__content2{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+}
+.nav__content2{
+    justify-content: center;
+}
+.nav__img{
+    width: 60px;
+    height: 60px;
+}
+.nav__title{
+    color: var(--color__textNav);
+    font-size: 1.8rem;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.nav__item{
+    text-decoration: none;
+    width:  100px;
+    height: 100%;
+    line-height: 70px;
+    text-align: center;
+    color: var(--color__textNav);
+}
+.nav__item:hover{
+    background: #e8d5fd;
+    font-weight: 700;
+    border-bottom: 4px solid #C13131;
+}
+.content{
+    display: flex;
+    transform: translateY(40px);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 70px);
+    gap: 5.5rem;
+}
+.conntent__colum1{
+    display: flex;
+}
+.content__title{
+    color: var(--color__principal);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.content__p{
+    width: 500px;
+    color: var(--color__p);
+    text-align: justify;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.conntent__colum2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content__img{
+    width: 280px;
+    height: 210px;
+    margin-bottom: .5rem;
+    margin-left: 6rem;
+}
+.footer{
+    position: relative;
+    bottom: -10px;
+    width: 100%;
+    height: 60px;
+    background: var(--color__principal);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.content__contactMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid #C13131;
+    border-radius: 15px;
+    padding: .5rem;
+}
+.content__panelC{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content__panelImg{
+    display: flex;
+    justify-content: center   ;
+    align-items: center;
+    flex-direction: column;
+}
+.content__panelText{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+}
+.contetent__titleC{
+    color: var(--color__principal);
+}
+.content__pC{
+    color: var(--color__title);
+    font-size: 1.4rem;
+}
+.footer__title{
+    margin-left: 2rem;
+    font-size: 1.6rem;
+    color: #ffff;
+}
+.footer__contentImages{
+    display: flex;
+}
+.footer__img{
+    display: block;
+    width: 52px;
+    height: 35px;
+    transition: transform ease-in-out .1s;
+}
+.ig{
+    background-image: url("images/Instagram\ Circlewhite.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.lk{
+    background-image: url("images/LinkedIn\ Circledwhite.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tw{
+    background-image: url("images/Twitter\ Circledwhite.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gh{
+    background-image: url("images/GitHubwhite.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fb{
+    background-image: url("images/Facebookwhite.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer__img:hover{
+    transform: scale(1.2);
+    transition: transform ease-in-out .1s;
+}
